@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mauri-tech/Mauricio-Trevino-Social-Network-BackEnd/issues"
   },
-  "homepage": "https://github.com/mauri-tech/Mauricio-Trevino-Social-Network-BackEnd#readme"
+  "homepage": "https://github.com/mauri-tech/Mauricio-Trevino-Social-Network-BackEnd#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
