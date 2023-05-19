@@ -1,0 +1,20 @@
+{
+  "name": "challenge-18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauri-tech/Mauricio-Trevino-Social-Network-BackEnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauri-tech/Mauricio-Trevino-Social-Network-BackEnd/issues"
+  },
+  "homepage": "https://github.com/mauri-tech/Mauricio-Trevino-Social-Network-BackEnd#readme"
+}
