@@ -62,5 +62,6 @@ If you have any questions, please contact the author:
 
 - Github Profile: [mauri-tech](https://github.com/mauri-tech)
 - E-mail: Mauricio.trevinon91@gmail.com
+- For the app demonstration please click on the [Walkthrough Video](placeholder)
 
 For more information and functionality refer to the [GitHub Repo](https://github.com/mauri-tech/Mauricio-Trevino-Social-Network-BackEnd) for this project.
