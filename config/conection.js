@@ -1,17 +1,27 @@
 const mongoose = require('mongoose');
 
-// Establishing MongoDB connection with Mongoose
-mongoose.connect('mongodb://localhost:27017/userThoughtDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+
+mongoose.set('strictQuery', false);
+
+
+(async () => {
+  try {
+    await mongoose.connect('mongodb://127.0.0.1:27017', {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log('Connection to MongoDB succesful');
+  } catch (error) {
+    console.error('Error connecting to MongoDB:', error);
+    process.exit(1);
+  }
+})();
+
+
+mongoose.connection.on('error', (error) => {
+  console.error('MongoDB error:', error);
+  process.exit(1);
 });
 
-// Handling connection events
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-db.once('open', () => {
-  console.log('Connected to MongoDB');
-});
 
-// Exporting the connection to be used elsewhere in the app
-module.exports = db;
+module.exports = mongoose.connection;
